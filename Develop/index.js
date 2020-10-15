@@ -45,9 +45,10 @@ function init() {
             name: "usage"
         },
         {
-            type: "input",
+            type: "checkbox",
             message: "License?",
-            name: "license"
+            name: "license",
+            choices: ["GNU AGPLv3", "GNU GPLv3", "GNU LGPLv3", "MIT License", "Mozilla Public License 2.0", "Apache License 2.0", "Boost Software License 1.0", "The Unlicense"] 
         }, 
         {
             type: "input",
