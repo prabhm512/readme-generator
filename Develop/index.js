@@ -1,12 +1,13 @@
 const fs = require("fs");
 const inquirer = require("inquirer");
+const generateMarkdown = require("./utils/generateMarkdown");
 
 // array of questions for user
 const questions = [];
 
 // function to write README file
 function writeToFile(fileName, data) {
-    fs.writeFile(fileName, JSON.stringify(data, null, '\t'), function(err) {
+    fs.writeFile(fileName, data, function(err) {
         if (err) {
             console.log(err);
         } else {
@@ -54,16 +55,15 @@ function init() {
             name: "contributing"
         }
     ]).then((response) => {
-        console.log(response);
-        writeToFile("test.txt", response);
+        writeToFile("README.md", generateMarkdown(response));
     }).catch(error => {
         if (error.isTtyError) {
             console.log("Prompt could not be rendered in the current environment.");
         } else {
             console.log(error);
-            console.log("Something went wrong. Please try again.");
         }
     })
+
 }
 
 // function call to initialize program
