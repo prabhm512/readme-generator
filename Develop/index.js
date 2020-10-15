@@ -5,7 +5,15 @@ const inquirer = require("inquirer");
 const questions = [];
 
 // function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) {
+    fs.writeFile(fileName, JSON.stringify(data, null, '\t'), function(err) {
+        if (err) {
+            console.log(err);
+        } else {
+            console.log("Success!");
+        }
+    })
+}
 
 // function to initialize program
 function init() {
@@ -46,12 +54,13 @@ function init() {
             name: "contributing"
         }
     ]).then((response) => {
-        console.log("Success!");
-        writeToFile("README.md", response);
+        console.log(response);
+        writeToFile("test.txt", response);
     }).catch(error => {
         if (error.isTtyError) {
             console.log("Prompt could not be rendered in the current environment.");
         } else {
+            console.log(error);
             console.log("Something went wrong. Please try again.");
         }
     })
