@@ -8,7 +8,10 @@ ${data.desc}
 
 ## Table of Contents
 
-${data.toc}
+[Installation](#-installation)  
+[Usage](#-usage)  
+[License](#-license)  
+[Contributing](#-contributing)  
 
 ## Installation
 

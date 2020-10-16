@@ -13,12 +13,7 @@ const questions = [
         type: "editor",
         message: "App Description?",
         name: "desc"
-    }, 
-    {
-        type: "editor",
-        message: "Table of Contents?",
-        name: "toc"
-    }, 
+    },  
     {
         type: "input", 
         message: "How can a user install this app?", 
