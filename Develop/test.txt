@@ -1,9 +1,0 @@
-{
-	"title": "a",
-	"description": "a",
-	"toc": "a",
-	"installation": "a",
-	"usage": "a",
-	"license": "a",
-	"contributing": "a"
-}
