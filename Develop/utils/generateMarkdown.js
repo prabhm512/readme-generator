@@ -11,7 +11,9 @@ ${data.desc}
 [Installation](#-installation)  
 [Usage](#-usage)  
 [License](#-license)  
-[Contributing](#-contributing)  
+[Contributing](#-contributing)
+[Tests](#-tests) 
+[Questions](#-questions) 
 
 ## Installation
 
@@ -23,12 +25,19 @@ ${data.usage}
 
 ## License
 
-${data.license}
+${data.license} 
 
 ## Contributing
 
 ${data.contributing}
 
+## Tests
+
+<a href="${data.test}">${data.test}</a>
+
+## Questions 
+
+For any questions regarding this project, please email ${data.email}.
 `;
 }
 

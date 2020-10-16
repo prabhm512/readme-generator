@@ -34,6 +34,16 @@ const questions = [
         type: "input",
         message: "Contributors to this app?",
         name: "contributing"
+    },
+    {
+        type: "input",
+        message: "What is the relative path to the test file?",
+        name: "test"
+    },
+    {
+        type: "input",
+        message: "What is your email?",
+        name: "email"
     }
 ];
 
