@@ -36,7 +36,7 @@ Prabh Singh
 
 ## Tests
 
-<a href="#">There currently is no test file for this project.</a>
+There currently is no test file for this project.
 
 ## Questions
 
