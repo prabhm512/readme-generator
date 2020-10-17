@@ -50,6 +50,8 @@ function generateMarkdown(data) {
   }
 
   return `# ${data.title}
+
+${selectedLicenses.join(" ")}
             
 ## Description
 
@@ -59,7 +61,7 @@ ${data.desc}
 
 [Installation](#-installation)  
 [Usage](#-usage)  
-[License](#-license)  
+[License](#-licenses)  
 [Contributing](#-contributing)                                             
 [Tests](#-tests)                                                                    
 [Questions](#-questions) 
@@ -72,9 +74,9 @@ ${data.installation}
 
 ${data.usage}
 
-## License
+## Licenses
 
-${selectedLicenses.join(" ")} 
+The underlying source code used to format and display this content is licensed under the ${selectedLicenses.join(" ")}
 
 ## Contributing
 
@@ -82,11 +84,13 @@ ${data.contributing}
 
 ## Tests
 
-<a href="${data.test}">${data.test}</a>
+<a href="${data.test}">Click to open test code</a>
 
 ## Questions 
 
-For any questions regarding this project, please email ${data.email}.
+My Github profile is <a href="https://github.com/${data.username}">${data.username}</a>.
+
+If you have any questions regarding this project, please email ${data.email}.
 `;
 }
 

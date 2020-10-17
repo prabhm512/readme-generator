@@ -37,8 +37,13 @@ const questions = [
     },
     {
         type: "input",
-        message: "What is the relative path to the test file?",
+        message: "What is the test file/folder Github link?",
         name: "test"
+    },
+    {
+        type: "input",
+        message: "What is your Github username?",
+        name: "username"
     },
     {
         type: "input",
@@ -71,8 +76,10 @@ function init() {
             console.log(error);
         }
     })
-
 }
 
 // function call to initialize program
 init();
+
+// export init function so it can be used in other applications
+module.exports = init;
