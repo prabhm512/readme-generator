@@ -8,12 +8,12 @@ A command-line application allows for quick and easy generation of a basic proje
 
 ## Table of Contents
 
-[Installation](#-installation)  
-[Usage](#-usage)  
-[License](#-licenses)  
-[Contributing](#-contributing)  
-[Tests](#-tests)  
-[Questions](#-questions)
+[Installation](#installation)  
+[Usage](#usage)  
+[License](#licenses)  
+[Contributing](#contributing)  
+[Tests](#tests)  
+[Questions](#questions)
 
 ## Installation
 
